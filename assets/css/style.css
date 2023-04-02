@@ -1,0 +1,223 @@
+/* --------------------General */
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;
+}
+
+p{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* --------------------Heading */
+.pageHeader, .pageFooter {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageHeader {
+    position: fixed;
+    flex-direction: column;
+}
+
+.titleContainer{
+    text-align: center;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    margin: 5px;
+    text-align: center;
+}
+
+.subTitle {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+/* --------------------Nav */
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+.menu li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.menu li.active {
+    text-decoration: underline;
+}
+
+.menu a {
+    color: #fff;
+}
+
+/* --------------------Main Home Page */
+.spacer{
+    height: 115px;
+    width: 100%;
+}
+
+.heroImage{
+    height: 35vh;
+    background-image: url('../images/home-bg.webp');
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 115px;
+    background-color: #000;
+}
+
+.aboutMe{
+    background-color: #000;
+    color: #fff;
+}
+
+.aboutWork{
+    background-color: #fff;
+    color: #000;
+}
+
+.aboutMe, .aboutWork, .reviews{
+    padding: 20px;
+}
+
+h2 i {
+    padding-right: 10px;
+}
+
+.review, .content{
+    padding: 10px 20px;
+}
+
+.review{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reviewPhoto{
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    border: 5px solid black;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.reviewPhoto1{
+    background-image: url('../images/engagmentPencil.webp');
+}
+
+.reviewPhoto2{
+    background-image: url('../images/dogsPaint.webp');
+}
+
+.reviews{
+    background-color: #fff;
+    color: #000;
+}
+
+p.reviewComment{
+    font-style: italic;
+}
+
+.stars{
+    display: block;
+    padding: 5px 0;
+}
+
+p.reviewName{
+    font-weight: bold;
+}
+
+/* --------------------Footer */
+.pageFooter{
+    flex-direction: column-reverse;
+}
+
+.infoContainer{
+    margin: 5px;
+    text-align: center;
+}
+
+.pageFooter svg{
+    height: 30px;
+    width: fit-content;
+}
+
+.infoContainer p{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.socialContainer .menu{
+    margin: 10px 0 0 0;
+}
+
+.social i{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+/* --------------------Media Queries */
+
+@media(min-width: 576px) {
+    .pageHeader, .pageFooter{
+        flex-direction: row;
+    }
+    .spacer{
+        height: 88px;
+    }
+    .infoContainer p{
+        display: inline-block;
+    }
+    .heroImage{
+        height: 50vh;
+        background-position: 0 88px;
+    }
+}
+
+@media(min-width: 992px) {
+    .heroImage{
+        height: 75vh;
+    }
+    .largeScreenContainer{
+        display: flex;
+
+    }
+    .aboutMe, .aboutSite{
+        width: 50%;
+    }
+}
