@@ -1,31 +1,39 @@
 /* --------------------General */
-body{
+body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 5px 0;
 }
 
-p{
+p {
     margin: 0;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 1px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* --------------------Heading */
-.pageHeader, .pageFooter {
+.pageHeader,
+.pageFooter {
     width: 100%;
     background-color: #000;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .pageHeader {
@@ -33,15 +41,11 @@ a{
     flex-direction: column;
 }
 
-.titleContainer{
-    text-align: center;
-}
-
 .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     font-size: 40px;
-    margin: 5px;
+    margin: 0;
     text-align: center;
 }
 
@@ -57,8 +61,8 @@ a{
 .menu {
     display: flex;
     flex-direction: row;
-    padding: 0;
-    margin: 0 0 5px 0;
+    padding: 5px;
+    margin: 0;
 }
 
 .menu li {
@@ -75,12 +79,13 @@ a{
 }
 
 /* --------------------Main Home Page */
-.spacer{
-    height: 115px;
+.spacer {
+    height: 120px;
     width: 100%;
+    background-color: #000;
 }
 
-.heroImage{
+.heroImage {
     height: 35vh;
     background-image: url('../images/home-bg.webp');
     background-size: 100%;
@@ -90,17 +95,19 @@ a{
     background-color: #000;
 }
 
-.aboutMe{
+.aboutMe {
     background-color: #000;
     color: #fff;
 }
 
-.aboutWork{
+.aboutWork {
     background-color: #fff;
     color: #000;
 }
 
-.aboutMe, .aboutWork, .reviews{
+.aboutMe,
+.aboutWork,
+.reviews {
     padding: 20px;
 }
 
@@ -108,17 +115,18 @@ h2 i {
     padding-right: 10px;
 }
 
-.review, .content{
+.review,
+.content {
     padding: 10px 20px;
 }
 
-.review{
+.review {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.reviewPhoto{
+.reviewPhoto {
     width: 70px;
     height: 70px;
     min-width: 70px;
@@ -128,57 +136,56 @@ h2 i {
     background-size: cover;
 }
 
-.reviewPhoto1{
+.reviewPhoto1 {
     background-image: url('../images/engagmentPencil.webp');
 }
 
-.reviewPhoto2{
+.reviewPhoto2 {
     background-image: url('../images/dogsPaint.webp');
 }
 
-.reviews{
+.reviews {
     background-color: #fff;
     color: #000;
 }
 
-p.reviewComment{
+p.reviewComment {
     font-style: italic;
 }
 
-.stars{
+.stars {
     display: block;
     padding: 5px 0;
 }
 
-p.reviewName{
+p.reviewName {
     font-weight: bold;
 }
 
 /* --------------------Footer */
-.pageFooter{
-    flex-direction: column-reverse;
+.pageFooter {
+    flex-direction: column;
+    padding: 10px;
 }
 
-.infoContainer{
+.infoContainer {
     margin: 5px;
     text-align: center;
 }
 
-.pageFooter svg{
+.pageFooter svg {
     height: 30px;
+    margin: 0 10px 0 10px;
     width: fit-content;
 }
 
-.infoContainer p{
+.pageFooter p {
     font-family: 'Nunito', sans-serif;
-    margin: 0;
+    padding: 5px;
+    text-align: center;
 }
 
-.socialContainer .menu{
-    margin: 10px 0 0 0;
-}
-
-.social i{
+.social i {
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -194,30 +201,50 @@ p.reviewName{
 /* --------------------Media Queries */
 
 @media(min-width: 576px) {
-    .pageHeader, .pageFooter{
+
+    .pageHeader {
         flex-direction: row;
     }
-    .spacer{
+
+    .spacer {
         height: 88px;
     }
-    .infoContainer p{
-        display: inline-block;
-    }
-    .heroImage{
+
+    .heroImage {
         height: 50vh;
         background-position: 0 88px;
+    }
+    
+    .reviewContainer {
+        display: flex;
+    }
+
+    .review {
+        width: 50%;
+    }
+    
+    .pageFooter {
+        flex-direction: row-reverse;
     }
 }
 
 @media(min-width: 992px) {
-    .heroImage{
-        height: 75vh;
-    }
-    .largeScreenContainer{
-        display: flex;
 
+    .heroImage {
+        height: 70vh;
+        background-position: 0 88px;
     }
-    .aboutMe, .aboutSite{
+
+    .homeContentContainer {
+        display: flex;
+    }
+
+    .aboutMe,
+    .aboutWork {
         width: 50%;
+    }
+
+    .review {
+        width: 33%;
     }
 }
