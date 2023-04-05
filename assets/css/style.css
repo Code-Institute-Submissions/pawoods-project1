@@ -86,13 +86,20 @@ a {
 }
 
 .heroImage {
-    height: 35vh;
+    min-height: 35vh;
     background-image: url('../images/home-bg.webp');
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 0 115px;
     background-color: #000;
+}
+
+.heroImage.flex {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: fit-content;
 }
 
 .aboutMe {
@@ -105,10 +112,9 @@ a {
     color: #000;
 }
 
-.aboutMe,
-.aboutWork,
-.reviews {
+section {
     padding: 20px;
+    box-sizing: border-box;
 }
 
 h2 i {
@@ -118,6 +124,12 @@ h2 i {
 .review,
 .content {
     padding: 10px 20px;
+}
+
+.reviewContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .review {
@@ -162,6 +174,23 @@ p.reviewName {
     font-weight: bold;
 }
 
+/* --------------------Gallery */
+.galleryContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.pencilGallery,
+.digitalGallery {
+    background-color: #000;
+    color: #fff;
+}
+
+.paintGallery {
+    background-color: #fff;
+    color: #000;
+}
+
 /* --------------------Footer */
 .pageFooter {
     flex-direction: column;
@@ -204,6 +233,8 @@ p.reviewName {
 
     .pageHeader {
         flex-direction: row;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .spacer {
@@ -211,37 +242,55 @@ p.reviewName {
     }
 
     .heroImage {
-        height: 50vh;
+        height: 40vh;
         background-position: 0 88px;
     }
-    
+
+    .flex section {
+        margin: 10px 20px;
+        border-radius: 20px;
+    }
+
     .reviewContainer {
-        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .review {
         width: 50%;
+        box-sizing: border-box;
     }
-    
+
     .pageFooter {
         flex-direction: row-reverse;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 @media(min-width: 992px) {
 
     .heroImage {
-        height: 70vh;
+        height: 40vh;
         background-position: 0 88px;
+        background-image: url(../images/home-bg-lg2.webp);
     }
 
-    .homeContentContainer {
-        display: flex;
+    .heroImage.flex {
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
     }
 
-    .aboutMe,
-    .aboutWork {
-        width: 50%;
+    .flex section {
+        margin: 20px 10px;
+    }
+
+    .pencilGallery,
+    .paintGallery,
+    .digitalGallery {
+        width: 33%;
     }
 
     .review {
