@@ -100,6 +100,7 @@ a {
     flex-direction: column;
     padding: 0;
     height: fit-content;
+    justify-content: space-evenly;
 }
 
 .aboutMe {
@@ -230,6 +231,7 @@ input, .input {
 
 textarea.input {
     height: 100px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .buttonContainer {
@@ -241,9 +243,32 @@ input.button {
     width: 40%;
 }
 
-input.button[type="reset"] {
+input.reset {
     background-color: #000;
     color: #fff;
+}
+
+input.button:hover {
+    background-color: #888;
+}
+
+/* --------------------Thank You Page */
+.thankYou {
+    background-color: #000;
+    color: #fff;
+}
+
+.center {
+    align-items: center;
+}
+
+p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+p a:visited {
+    color: #aaa;
 }
 
 /* --------------------Footer */
@@ -317,6 +342,20 @@ input.button[type="reset"] {
         box-sizing: border-box;
     }
 
+    .contactMe > * {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .formContainer form {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .thankYou {
+        width: 50%;
+    }
+
     .pageFooter {
         flex-direction: row-reverse;
         padding-left: 20px;
@@ -351,4 +390,9 @@ input.button[type="reset"] {
     .review {
         width: 33%;
     }
+
+    .contactMe, .formContainer {
+        width: 50%;
+    }
+
 }
