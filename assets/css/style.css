@@ -113,6 +113,11 @@ a {
     color: #000;
 }
 
+.aboutWork a {
+    color: #000;
+    text-decoration: underline;
+}
+
 section {
     padding: 20px;
     box-sizing: border-box;
@@ -262,7 +267,7 @@ input.button:hover {
     align-items: center;
 }
 
-p a {
+.thankYou a {
     color: #fff;
     text-decoration: underline;
 }

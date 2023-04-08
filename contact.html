@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cardiff based artist specializing in pencil, paint and digital art. View artist biography and multi-media gallery. Contact for exisiting artworks, new commissions, collaborations and more"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script
       src="https://kit.fontawesome.com/1704febde4.js"
@@ -28,7 +32,9 @@
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li class="active"><a href="contact.html">Contact</a></li>
+          <li class="active">
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -50,7 +56,7 @@
         </p>
       </section>
       <section class="formContainer">
-        <form action="thank-you.html">
+        <form action="thank-you.html" method="GET">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email</label>
@@ -62,33 +68,46 @@
             <option value="collaboration">Collaboration</option>
           </select>
           <label for="details">Details</label>
-          <textarea class="input" name="name" required></textarea>
+          <textarea
+            class="input"
+            id="details"
+            name="details"
+            required
+          ></textarea>
           <div class="buttonContainer">
-            <input type="submit" value="Go!" class="button" />
-            <input type="reset" value="Clear Form" class="button reset" />
+            <input type="submit" value="Go!" class="button" name="submit" />
+            <input
+              type="reset"
+              value="Clear Form"
+              class="button reset"
+              name="reset"
+            />
           </div>
         </form>
       </section>
     </div>
-    
+
     <!-- Page Footer -->
     <footer class="pageFooter">
       <!-- Signature logo created with Inkscape -->
       <ul class="menu">
         <li class="social">
           <a href="https://www.instagram.com/paulwoodsart/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+            ><i class="fa-brands fa-instagram"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
         </li>
         <li class="social">
           <a href="https://www.facebook.com/paulwoodsart/photos" target="_blank"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
+            ><i class="fa-brands fa-facebook-f"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
         </li>
         <li class="social">
-          <a href="https://www.pinterest.co.uk/"
-            ><i class="fa-brands fa-pinterest"></i
-          ></a>
+          <a href="https://www.pinterest.co.uk/" target="_blank"
+            ><i class="fa-brands fa-pinterest"></i>
+            <span class="sr-only">Pinterest</span>
+          </a>
         </li>
       </ul>
       <p>Created for educational purposes only</p>
