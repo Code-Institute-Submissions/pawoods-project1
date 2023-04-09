@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* --------------------General */
 body {
     margin: 0;
@@ -123,6 +125,11 @@ section {
     box-sizing: border-box;
 }
 
+section>h2 {
+    width: fit-content;
+    margin: 0 auto;
+}
+
 h2 i {
     padding-right: 10px;
 }
@@ -197,8 +204,10 @@ p.reviewName {
     color: #000;
     height: fit-content;
 }
+
 img {
     width: 100%;
+    height: auto;
 }
 
 /* --------------------Contact */
@@ -212,7 +221,8 @@ img {
     color: #000;
 }
 
-.contactMe, .formContainer {
+.contactMe,
+.formContainer {
     height: fit-content;
 }
 
@@ -225,7 +235,9 @@ label {
     font-weight: 600;
 }
 
-input, .input {
+input,
+.input {
+    font-family: 'Nunito', sans-serif;
     width: 100%;
     height: 25px;
     box-sizing: border-box;
@@ -347,11 +359,6 @@ p a:visited {
         box-sizing: border-box;
     }
 
-    .contactMe > * {
-        max-width: 60%;
-        margin: 0 auto;
-    }
-
     .formContainer form {
         max-width: 60%;
         margin: 0 auto;
@@ -396,7 +403,8 @@ p a:visited {
         width: 33%;
     }
 
-    .contactMe, .formContainer {
+    .contactMe,
+    .formContainer {
         width: 50%;
     }
 

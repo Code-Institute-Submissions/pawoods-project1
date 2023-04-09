@@ -9,15 +9,7 @@
       content="Cardiff based artist specializing in pencil, paint and digital art. View artist biography and multi-media gallery. Contact for exisiting artworks, new commissions, collaborations and more"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <script
-      src="https://kit.fontawesome.com/1704febde4.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Paul Woods | Art & Design</title>
   </head>
@@ -39,10 +31,10 @@
     <div class="spacer">&nbsp;</div>
 
     <!-- Home Page Main -->
-    <section class="heroImage"></section>
-    <section class="heroImage flex">
+    <div class="heroImage"></div>
+    <div class="heroImage flex">
       <section class="aboutMe">
-        <h2><i class="fa-solid fa-user"></i>About Me</h2>
+        <h2><i class="fa-solid fa-user" aria-hidden="true"></i>About Me</h2>
         <p class="content">
           I'm Paul, an artist based in Cardiff, South Wales. I've always been
           creative and throughout education found myself gravitating towards
@@ -57,7 +49,7 @@
         </p>
       </section>
       <section class="aboutWork">
-        <h2><i class="fa-solid fa-palette"></i>My Work</h2>
+        <h2><i class="fa-solid fa-palette" aria-hidden="true"></i>My Work</h2>
         <p class="content">
           I work best somewhere in the cross section of realism, mark making and
           mathematical design. I'm proficient in digital art and graphic design
@@ -73,12 +65,12 @@
           all questions on commissions, existing works or anything else!
         </p>
       </section>
-    </section>
-    <section class="heroImage"></section>
+    </div>
+    <div class="heroImage"></div>
 
     <!-- Reviews Section -->
     <section class="reviews">
-      <h2><i class="fa-regular fa-comment"></i>Reviews</h2>
+      <h2><i class="fa-regular fa-comment" aria-hidden="true"></i>Reviews</h2>
       <div class="reviewContainer">
         <div class="review">
           <div class="reviewPhoto reviewPhoto1"></div>
@@ -87,13 +79,14 @@
               What a LOVELY drawing! The perfect way to celebrate our engagement
               :)
             </p>
-            <span class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </span>
+            <div class="stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <span class="sr-only">Five out of five stars</span>
+            </div>
             <p class="reviewName">Jane Doe - 2020</p>
           </div>
         </div>
@@ -104,13 +97,14 @@
               Best Painting Ever! My favourite photo of my dogs turned into a
               beautiful painting. SO HAPPY!
             </p>
-            <span class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </span>
+            <div class="stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <span class="sr-only">Five out of five stars</span>
+            </div>
             <p class="reviewName">John Doe - 2017</p>
           </div>
         </div>
@@ -121,13 +115,14 @@
               Absolutely fantastic illustration design from Paul and a very
               professional service.
             </p>
-            <span class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </span>
+            <div class="stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <span class="sr-only">Five out of five stars</span>
+            </div>
             <p class="reviewName">J.D. - 2022</p>
           </div>
         </div>
@@ -140,19 +135,19 @@
       <ul class="menu">
         <li class="social">
           <a href="https://www.instagram.com/paulwoodsart/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i>
+            ><i class="fa-brands fa-instagram" aria-hidden="true"></i>
             <span class="sr-only">Instagram</span>
           </a>
         </li>
         <li class="social">
           <a href="https://www.facebook.com/paulwoodsart/photos" target="_blank"
-            ><i class="fa-brands fa-facebook-f"></i>
+            ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
             <span class="sr-only">Facebook</span>
           </a>
         </li>
         <li class="social">
           <a href="https://www.pinterest.co.uk/" target="_blank"
-            ><i class="fa-brands fa-pinterest"></i>
+            ><i class="fa-brands fa-pinterest" aria-hidden="true"></i>
             <span class="sr-only">Pinterest</span>
           </a>
         </li>
@@ -164,8 +159,7 @@
         viewBox="0 0 145.49915 41.078766"
         version="1.1"
         id="svg5"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:svg="http://www.w3.org/2000/svg"
+        aria-hidden="true"
       >
         <defs id="defs2" />
         <g id="layer1" transform="translate(-8.5333235,-245.87969)">
@@ -183,5 +177,10 @@
         </g>
       </svg>
     </footer>
+
+    <script
+      src="https://kit.fontawesome.com/1704febde4.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
