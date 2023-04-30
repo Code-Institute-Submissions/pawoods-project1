@@ -60,24 +60,51 @@ Further into the design process, I decided to reduce this palette simply to blac
 ### Wireframes
 With the premise of the site in place, including some basic deisgn ideas and features to include, I began by skecthing out designs for the different pages of the site, focussing on mobile first with a view to scaling up to bigger devices once I was happy with the smaller screen designs. I quickly moved on to using Balsamiq to aid my wireframe designing and found it massively helped me make desicions on the layout design of the site as a whole.
 ![Balsamiq wireframe](assets/readme-images/Balsamiq.jpg)
+As can be seen above, the deisgn on smaller screens was planned to stack each section one above the other to give more real estate to each and lead the user to scroll through each page. This would then be spread into two columns at bigger screen sizes.
 
 ### Fonts and Icons
-I searched through [Google Fonts](https://fonts.google.com/?preview.text=Paul%20Woods&preview.text_type=custom) using the page header (Artist name) to look for a font that would stand out as a heading and settled on Raleway is the interesting compostion of the "W" made the heading more aesthetically pleasing. I also then chose Nunito as the option for the primary text to add a different yet complimentary feel to the site text.
+I searched through [Google Fonts](https://fonts.google.com/?preview.text=Paul%20Woods&preview.text_type=custom) using the page header (Artist name) to look for a font that would stand out as a heading and settled on Raleway as the interesting compostion of the "W" made the heading more aesthetically pleasing.
+![Raleway Font](assets/readme-images/google-raleway.jpg)
+I also then chose Nunito as the option for the primary text to add a different yet complimentary feel to the site text.
 
-I also settled on using font awesome for the logos to go alongside each page sub-heading due to the effectiveness I had seen in previous walk-through projects. I was especially keen to use the star icons to show ratings in the reviews section. 
+I also settled on using [Font Awesome](https://fontawesome.com/) for the logos to go alongside each page sub-heading due to the effectiveness I had seen in previous walk-through projects. I was especially keen to use the star icons to show ratings in the reviews section. 
 
 Both of these libraries were extremely easy to link to and integrate into the project and I feel they have added a huge amount to the overall design.
 
 ## Development
+I began developing the project through Gitpod with the respository being stored on Github. Further into the project, the course migrated over to CodeAnywehere which caused some issues and bugs as documented later on. 
 
+I initially began styling the page using Bootstrap but quickly found it frustrating to override classes and get the outcome I wanted so decided to push myself to write all the styling myself using CSS flex instead.
+
+To cut down the development time, I began building this site by focussing on the elements that would be consistent across multiple pages:
+
+- Header element with title and navigation menu.
+- Static hero image, created by fixing an image to the background of an empty section
+- Reviews section with thumbnail icons, review comments, star ratings, name and date.
+- Footer including svg artist signature and social media links.
 
 ### Languages
 
+- HTML5
+- CSS3
+
+### Media Queries
+Once I was happy with the styling of the pages at mobile size, I used CSS media queries to change the layouts at different breakpoints:
+
+- 576px and above - covers the Bootstrap classes of small and medium
+- 992px and above - covers the Bootstrap classes of large and extra large
+
+This ensured that at all device screen sizes, the layout would perform as expected, giving enough space to each element as can be seen in the comparison screenshots below:
+
+![Gallery Full](assets/readme-images/gallery-full.jpg)
 
 ## Testing
 
 
 ### Code and Performance Testing
+
+
+### Bugs
 
 
 ## Deployment
