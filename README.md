@@ -1,5 +1,5 @@
 # Paul Woods - Art & Design
-For this project, I wanted to design and develop an artists biography and gallery website using my own information and art as the content. I feel that working with my own content helped me to be more thorough along the entire process so as to present my artwork in the best possible light as well as create a webiste that I am proud of.
+For this project, I wanted to design and develop an artists biography and gallery website using my own information and art as the content. I feel that working with my own content helped me to be more thorough along the entire process so as to present my artwork in the best possible light as well as create a webiste that I was proud of.
 
 ![Responsive website deisgn views](assets/readme-images/devices-view.jpg)
 
@@ -158,14 +158,18 @@ Aftr removing these, all files came back from the validators showing no issues.
 ![HTML Validator](assets/readme-images/html-validator.jpg)
 ![CSS Validator](assets/readme-images/css-validator.jpg)
 
-Acting on advice from my mentor, I changed all the photo file formats to .webp to improve page performance and then spent some time using Lighthouse in Google Dev Tools for further opportunities to improve performance and check accessibility, best practice and search engine optimization scores. The below screenshot shows the gallery page score with all other pages scoring similarly well.
+Acting on advice from my mentor, I changed all the photo file formats to .webp to improve page performance and then spent some time using Lighthouse in Google Dev Tools for further opportunities to improve performance and check accessibility, best practice and search engine optimization scores. The below screenshot shows the home page score with all other pages scoring similarly well.
 
-![Gallery Lighthouse score](assets/readme-images/gallery-lighthouse.jpg)
+![Home Lighthouse score](assets/readme-images/home-lighthouse.jpg)
+
+One noted issue was the reported need to set explicit height and widths on images which I initially added in an effort to improve performance but on review with my mentor, left out of the final version of the code to keep the HTML and CSS separate.
 
 ### Bugs
-The first bug I encountered was the background hero image sizing at different breakpoints. The fixed background image worked well initialy on mobile but then when scaling up to desktop, the image was very stretched and unrecognisable. I overcame this by creating two different background images; a narrower collage for mobile and tablet and a wider collage for desktop size screen and implemented this to the background of the div element through the different media queries.
+The main bug I encountered was the background hero image sizing at different breakpoints. The fixed background image worked well initialy on mobile but then when scaling up to desktop, the image was very stretched and unrecognisable. I overcame this by creating two different background images; a narrower collage for mobile and tablet and a wider collage for desktop size screen and implemented this to the background of the div element through the different media queries.
 
+I also encountered a bug specifically on Firefox which pushed the signature in the footer too far into the page which made the layout look extremely odd. I fixed this by reviewing the CSS in the Firefox Dev Tools and amending the width value to fix the issue.
 
+As noted previously, a big issue I faced was during the shift from GitPod to CodeAnywhere which came with a change in default formatter. This meant that using the formatter short cut would add in or reformat code which on review needed to be amended, lengthening the time to complete the project significantly.
 
 ---
 ## Deployment
@@ -185,4 +189,4 @@ Link to live site - [https://pawoods.github.io/project1/](https://pawoods.github
 
 - Credit also goes to the friends, family and Slack class group members who provided the feedback to fine tune my site.
 
-- A big thank you also to my mentor Martina who provided a lot of insight on how best to plan and execute my project.
+- A big thank you also to my mentor, Martina, who provided a lot of valuable insight on how best to plan and execute my project, including catching the errors caused by the auto formatter.
