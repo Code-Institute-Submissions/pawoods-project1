@@ -224,6 +224,7 @@ img {
 .contactMe,
 .formContainer {
     height: fit-content;
+    padding: 20px;
 }
 
 form {
@@ -302,7 +303,7 @@ p a:visited {
 .pageFooter svg {
     height: 30px;
     margin: 0 10px 0 10px;
-    width: fit-content;
+    width: auto;
 }
 
 .pageFooter p {
@@ -325,7 +326,6 @@ p a:visited {
 }
 
 /* --------------------Media Queries */
-
 @media(min-width: 576px) {
 
     .pageHeader {
@@ -343,7 +343,7 @@ p a:visited {
         background-position: 0 88px;
     }
 
-    .flex section {
+    .flex section, .formContainer {
         margin: 10px 20px;
         border-radius: 20px;
     }
@@ -389,7 +389,7 @@ p a:visited {
         justify-content: center;
     }
 
-    .flex section {
+    .flex section, .formContainer {
         margin: 20px 10px;
     }
 
@@ -407,5 +407,4 @@ p a:visited {
     .formContainer {
         width: 50%;
     }
-
 }
