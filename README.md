@@ -1,7 +1,7 @@
 # Paul Woods - Art & Design
 For this project, I wanted to design and develop an artists biography and gallery website using my own information and art as the content. I feel that working with my own content helped me to be more thorough along the entire process so as to present my artwork in the best possible light as well as create a webiste that I was proud of.
 
-![Responsive website deisgn views](assets/readme-images/devices-view.jpg)
+![Responsive website deisgn views](assets/readme-images/devicesview.jpg)
 
 ---
 ## Table of contents
@@ -52,7 +52,7 @@ These user stories led me to list the features I would like to include on the si
 
 4. A consistent navigational element for improved user experience.
 
-![Page header](assets/readme-images/nav-full.jpg)
+![Page header](assets/readme-images/navfull.jpg)
 
 5. A reviews section highlighting comments from previous recipients of artwork.
 
@@ -68,21 +68,21 @@ These user stories led me to list the features I would like to include on the si
 ### Colours
 As the majority of the artwork is black and white with ocassional pops of bright colour (often red), I used [coolors.co](https://coolors.co/ffffff-000000-950023-216869-7c7c7c) to build on these three colours to form a usable and appealing colour palette and initially settled on the below:
 
-![Coolors.co colour palette](assets/readme-images/colour-palette.jpg)
+![Coolors.co colour palette](assets/readme-images/colourpalette.jpg)
 
 Further into the design process, I decided to reduce this palette simply to black and white so as not to overwhelm the user experience and allow the artwork and information to be the primary focus of the site. I am happy with this decision and feel the finished site benifits from not having more colours added to the design. This also ensures a readable contrast between the text and section background colours in all areas of the site.
 
 ### Wireframes
 With the premise of the site in place, including some basic deisgn ideas and features to include, I began by skecthing out designs for the different pages of the site, focussing on mobile first with a view to scaling up to bigger devices once I was happy with the smaller screen designs. I quickly moved on to using Balsamiq to aid my wireframe designing and found it massively helped me make desicions on the layout design of the site as a whole.
 
-![Balsamiq wireframe](assets/readme-images/Balsamiq.jpg)
+![Balsamiq wireframe](assets/readme-images/balsamiq.jpg)
 
 As can be seen above, the deisgn on smaller screens was planned to stack each section one above the other to give more real estate to each and lead the user to scroll through each page. This would then be spread into two columns at bigger screen sizes.
 
 ### Fonts and Icons
 I searched through [Google Fonts](https://fonts.google.com/?preview.text=Paul%20Woods&preview.text_type=custom) using the page header (Artist name) to look for a font that would stand out as a heading and settled on Raleway as the interesting compostion of the "W" made the heading more aesthetically pleasing.
 
-![Raleway Font](assets/readme-images/google-raleway.jpg)
+![Raleway Font](assets/readme-images/googleraleway.jpg)
 
 I also then chose Nunito as the option for the primary text to add a different yet complimentary feel to the site text.
 
@@ -118,15 +118,15 @@ This ensured that at all device screen sizes, the layout would perform as expect
 
 - Gallery page at mobile screen size.
 
-![Gallery Mobile](assets/readme-images/gallery-mobile.jpg)
+![Gallery Mobile](assets/readme-images/gallerymobile.jpg)
 
 - Gallery page at desktop screen size.
 
-![Gallery Full](assets/readme-images/gallery-full.jpg)
+![Gallery Full](assets/readme-images/galleryfull.jpg)
 
 - Reviews and footer sections at mobile screen size.
 
-![Reviews Mobile](assets/readme-images/reviews-mobile.jpg)
+![Reviews Mobile](assets/readme-images/reviewsmobile.jpg)
 
 - Reviews and footer sections at desktop screen size.
 
@@ -155,12 +155,12 @@ These were initially added automatically from the CodeAnywhere formatter (more o
 
 Aftr removing these, all files came back from the validators showing no issues.
 
-![HTML Validator](assets/readme-images/html-validator.jpg)
-![CSS Validator](assets/readme-images/css-validator.jpg)
+![HTML Validator](assets/readme-images/htmlvalidator.jpg)
+![CSS Validator](assets/readme-images/cssvalidator.jpg)
 
 Acting on advice from my mentor, I changed all the photo file formats to .webp to improve page performance and then spent some time using Lighthouse in Google Dev Tools for further opportunities to improve performance and check accessibility, best practice and search engine optimization scores. The below screenshot shows the home page score with all other pages scoring similarly well.
 
-![Home Lighthouse score](assets/readme-images/home-lighthouse.jpg)
+![Home Lighthouse score](assets/readme-images/homelighthouse.jpg)
 
 One noted issue was the reported need to set explicit height and widths on images which I initially added in an effort to improve performance but on review with my mentor, left out of the final version of the code to keep the HTML and CSS separate.
 

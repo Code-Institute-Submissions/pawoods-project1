@@ -89,7 +89,7 @@ a {
 
 .heroImage {
     height: 35vh;
-    background-image: url('../images/home-bg.webp');
+    background-image: url('../images/homebg.webp');
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -162,15 +162,15 @@ h2 i {
 }
 
 .reviewPhoto1 {
-    background-image: url('../images/engagmentPencil.webp');
+    background-image: url('../images/engagmentpencil.webp');
 }
 
 .reviewPhoto2 {
-    background-image: url('../images/dogsPaint.webp');
+    background-image: url('../images/dogspaint.webp');
 }
 
 .reviewPhoto3 {
-    background-image: url('../images/IcarusDigital.webp');
+    background-image: url('../images/icarusdigital.webp');
 }
 
 .reviews {
@@ -380,7 +380,7 @@ p a:visited {
     .heroImage {
         height: 40vh;
         background-position: 0 88px;
-        background-image: url(../images/home-bg-lg2.webp);
+        background-image: url(../images/homebglg2.webp);
     }
 
     .heroImage.flex {
