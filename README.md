@@ -171,6 +171,9 @@ I also encountered a bug specifically on Firefox which pushed the signature in t
 
 As noted previously, a big issue I faced was during the shift from GitPod to CodeAnywhere which came with a change in default formatter. This meant that using the formatter short cut would add in or reformat code which on review needed to be amended, lengthening the time to complete the project significantly.
 
+#### Unfixed Bugs
+The only noted change I would make in the future is to the images in the gallery page. As they are responsive, the Lighthouse performance score on mobile drops below 80 due to the images being incorrectly sized for mobile. As this wasn't a drastic drop in performance and didn't effect the functionality of the site as a whole, I decided to leave it at present but would look to add different sized images at different breakpoints to overcome this in the future.
+
 ---
 ## Deployment
 The site was deployed to Github pages using the following steps to deploy:
@@ -185,7 +188,7 @@ Link to live site - [https://pawoods.github.io/project1/](https://pawoods.github
 
 ---
 ## Credits
-- I took initial layout inspiration from the previous walkthrough projects; Whisky Drop (Fixed background hero image) and Love Running (Page heading and nav menu)
+- I took initial layout inspiration from the previous walkthrough projects; Whisky Drop (Fixed background hero image) and Love Running (Page heading and nav menu) but wrote the code myself to suit the uses in this site.
 
 - Credit also goes to the friends, family and Slack class group members who provided the feedback to fine tune my site.
 
